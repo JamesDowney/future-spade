@@ -1,8 +1,8 @@
 {
-  "name": "future-spader",
+  "name": "future-spade",
   "version": "1.0.0",
   "description": "Spades things.",
-  "main": "KoLmafia/scripts/future-spader/future-spader.js",
+  "main": "KoLmafia/scripts/future-spade/future-spade.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "yarn run build:types && yarn run build:js",
@@ -36,7 +36,7 @@
   },
   "author": "Beldur",
   "license": "ISC",
-  "repository": "git+https://github.com/JamesDowney/future-spader.git",
+  "repository": "git+https://github.com/JamesDowney/future-spade.git",
   "keywords": [
     "KoLMafia",
     "JS",
