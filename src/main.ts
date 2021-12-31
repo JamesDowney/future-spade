@@ -21,7 +21,7 @@ function itemSpade(startIndex: number, endIndex: number) {
 
 function skillSpade(startIndex: number, endIndex: number) {
   for (let x = startIndex; x <= endIndex; x++) {
-    const skillPage = visitUrl(`desc_skill.php?whichskill=${x}}&self=true`);
+    const skillPage = visitUrl(`desc_skill.php?whichskill=${x}`);
     if (skillPage.includes("No skill found.")) {
       print(`Skill ${x} does not exist.`, `red`);
     } else {
