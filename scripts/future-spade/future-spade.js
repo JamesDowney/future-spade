@@ -52,7 +52,7 @@ function itemSpade(startIndex, endIndex) {
     var itemPage = (0,external_kolmafia_namespaceObject.visitUrl)("inv_equip.php?pwd=&which=2&action=equip&whichitem=".concat(x));
 
     if (itemPage.includes("Nopers.")) {
-      (0,external_kolmafia_namespaceObject.print)("Item ".concat(x, " does not exist."));
+      (0,external_kolmafia_namespaceObject.print)("Item ".concat(x, " does not exist."), "red");
     } else {
       var fleamarketPage = (0,external_kolmafia_namespaceObject.visitUrl)("town_sellflea.php?pwd=&whichitem=".concat(x, "&sellprice=&selling=Yep."));
       (0,external_kolmafia_namespaceObject.print)(fleamarketPage.includes("That item cannot be sold or transferred.") ? "Item ".concat(x, " exists but is untradeable.") : "Item ".concat(x, " exists and is tradeable."), "green");
