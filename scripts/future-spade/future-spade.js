@@ -62,7 +62,7 @@ function itemSpade(startIndex, endIndex) {
 
 function skillSpade(startIndex, endIndex) {
   for (var x = startIndex; x <= endIndex; x++) {
-    var skillPage = (0,external_kolmafia_namespaceObject.visitUrl)("desc_skill.php?whichskill=".concat(x, "}&self=true"));
+    var skillPage = (0,external_kolmafia_namespaceObject.visitUrl)("desc_skill.php?whichskill=".concat(x));
 
     if (skillPage.includes("No skill found.")) {
       (0,external_kolmafia_namespaceObject.print)("Skill ".concat(x, " does not exist."), "red");
