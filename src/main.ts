@@ -4,7 +4,7 @@ function itemSpade(startIndex: number, endIndex: number) {
   for (let x = startIndex; x <= endIndex; x++) {
     const itemPage = visitUrl(`inv_equip.php?pwd=&which=2&action=equip&whichitem=${x}`);
     if (itemPage.includes("Nopers.")) {
-      print(`Item ${x} does not exist.`);
+      print(`Item ${x} does not exist.`, `red`);
     } else {
       const fleamarketPage = visitUrl(
         `town_sellflea.php?pwd=&whichitem=${x}&sellprice=&selling=Yep.`
